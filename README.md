@@ -7,12 +7,12 @@
 
 <h3>OpenClaw AI 智能体最佳真实用例大全</h3>
 
-<p>29 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
+<p>37 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
 
 <br/>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![用例数量](https://img.shields.io/badge/用例-29-blue?style=flat-square)
+![用例数量](https://img.shields.io/badge/用例-37-blue?style=flat-square)
 ![中文](https://img.shields.io/badge/语言-简体中文-red?style=flat-square)
 ![新手友好](https://img.shields.io/badge/难度-新手友好-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
@@ -25,9 +25,9 @@
 
 # Awesome OpenClaw 最佳用例合集（中文版）
 
-> 你是否安装了 OpenClaw，却不知道拿它来做什么？
+> 解决 OpenClaw 普及的瓶颈：不是 ~~技能~~，而是找到 **它能改善你生活的方式**。
 >
-> 这里有 **29 个真实用户验证过的使用场景**，从每天早上自动给你发新闻摘要，到帮你管理服务器、追踪客户、创建内容——全部配有中文说明和可直接使用的提示词。
+> 这是一份面向中文用户的 OpenClaw 真实使用案例合集，包含社区验证的国际用例和针对中国工具生态的特色用例。无论你是刚开始接触 OpenClaw 的新手，还是想发掘更多场景的老用户，都可以在这里找到灵感。
 
 **不需要编程基础，只需要会打字。**
 
@@ -37,6 +37,10 @@
 本仓库基于 [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) 翻译和扩展，面向中文用户。感谢原作者 [hesamsheikh](https://github.com/hesamsheikh) 和所有社区贡献者。
 
 </details>
+
+> **新手？** 推荐从这些零门槛用例开始：[健康追踪](usecases/health-symptom-tracker.md) · [个人知识库](usecases/knowledge-base-rag.md) · [第二大脑](usecases/second-brain.md) · [早间简报](usecases/custom-morning-brief.md) · [收件箱整理](usecases/inbox-declutter.md)
+>
+> **中国用户？** 直接看 [中国特色用例](#-中国特色用例)，使用飞书/微信/小红书等国内工具。
 
 ---
 
@@ -49,6 +53,7 @@
 - [生产力](#生产力) — 邮件整理、日程管理、客户服务、个人助理
 - [研究与学习](#研究与学习) — 知识库、市场调研、财报追踪
 - [金融与交易](#金融与交易) — 预测市场模拟交易
+- [中国特色用例](#-中国特色用例) — 飞书、钉钉、企业微信、小红书、全网比价等国内工具场景
 
 ---
 
@@ -182,6 +187,21 @@
 |------|------|:---:|
 | [Polymarket 自动驾驶](usecases/polymarket-autopilot.md) | 自动化预测市场模拟交易，带回测、策略分析和每日绩效报告 | ⭐⭐⭐ |
 
+## 🇨🇳 中国特色用例
+
+> 专为中国工具生态设计，使用飞书、小红书、淘宝/京东等国内平台
+
+| 名称 | 描述 | 难度 |
+|------|------|:---:|
+| [飞书 AI 助手](usecases/cn-feishu-ai-assistant.md) | 把 OpenClaw 部署为飞书机器人，在对话中直接触发 AI 任务，支持文档自动化 | ⭐⭐ |
+| [钉钉 AI 助手](usecases/cn-dingtalk-ai-assistant.md) | 把 OpenClaw 部署为钉钉机器人，Stream 模式无需公网 IP | ⭐⭐ |
+| [企业微信 AI 助手](usecases/cn-wecom-ai-assistant.md) | 在企业微信中使用 AI，通过微信插件让个人微信也能用 | ⭐⭐ |
+| [早间简报（中国适配）](usecases/custom-morning-brief.md) | 每日定时推送简报到飞书/钉钉，支持中文新闻源和 cron 配置 | ⭐ |
+| [办公自动化套件](usecases/cn-office-automation.md) | 邮件管理、文件整理、会议纪要、周报生成，支持 163/QQ/Outlook | ⭐⭐ |
+| [小红书内容自动化](usecases/cn-xiaohongshu-automation.md) | 从选题、文案、封面图到定时发布的全流程自动化 | ⭐ |
+| [全网比价助手](usecases/cn-ecommerce-price-assistant.md) | 跨淘宝/京东/拼多多/抖音/快手一句话比价 | ⭐ |
+| [多智能体协作操作系统](usecases/cn-multi-agent-operating-system.md) | 把 OpenClaw 从单一智能体变成各司其职的 AI 团队 | ⭐⭐⭐ |
+
 > 难度说明：⭐ 复制粘贴即可用 · ⭐⭐ 需要简单配置 · ⭐⭐⭐ 需要一定技术基础
 
 ---
@@ -190,12 +210,12 @@
 
 | | 直接读英文 | 用翻译工具 | **本合集** |
 |---|:---:|:---:|:---:|
-| 中文母语阅读体验 | ❌ | ⚠️ 机翻生硬 | ✅ 人工翻译润色 |
+| 中文母语阅读体验 | ❌ | ⚠️ 机翻生硬 | ✅ 原生中文内容 |
+| 中国工具生态用例 | ❌ | ❌ | ✅ 飞书/小红书/淘宝等 |
 | 新手入门指南 | ❌ | ❌ | ✅ 从零开始教 |
 | 核心概念解释 | ❌ | ❌ | ✅ 通俗类比 |
 | 难度标注 | ❌ | ❌ | ✅ 按能力选用例 |
-| 技术术语注释 | ❌ | ❌ | ✅ 首次出现标注 |
-| 代码注释中文 | ❌ | ⚠️ 可能翻错 | ✅ 仅注释翻译 |
+| 真实场景验证 | ❌ | ❌ | ✅ 每个用例有来源佐证 |
 
 ---
 
@@ -217,7 +237,6 @@
 
 - [OpenClaw 官方仓库](https://github.com/openclaw/openclaw) — 安装和官方文档
 - [ClawHub 技能市场](https://clawhub.ai) — 浏览和安装技能
-- [原始英文用例合集](https://github.com/hesamsheikh/awesome-openclaw-usecases) — 本合集的英文源仓库
 
 ---
 
