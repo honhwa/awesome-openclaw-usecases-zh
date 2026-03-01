@@ -60,8 +60,43 @@ openclaw gateway install
 - **群聊策略**：建议设置为"@机器人时才回复"，避免在群聊中过于活跃
 - **Lark 国际版**：如果使用的是 Lark 国际版而非飞书中国版，需要用 Webhook + Cloudflare Tunnel 模式，教程中有详细说明
 
+## 进阶：文档自动化与权限管理
+
+基础的飞书 AI 助手接入后，你可以进一步安装飞书文档相关技能，实现"会后一句话整理纪要到飞书"等进阶场景。
+
+### 安装飞书文档技能
+
+```bash
+npx playbooks add skill openclaw/openclaw --skill feishu-doc
+npx playbooks add skill openclaw/openclaw --skill feishu-drive
+npx playbooks add skill openclaw/openclaw --skill feishu-perm
+```
+
+| 技能 | 能力 |
+|------|------|
+| feishu-doc | 读写/创建/追加飞书文档 |
+| feishu-drive | 飞书云盘文件管理 |
+| feishu-perm | 文档/文件夹协作者权限管理 |
+
+### 使用示例
+
+会议结束后发一句话：
+
+```text
+把今天下午产品评审会的讨论整理成飞书文档，放到"会议纪要"文件夹里。
+格式：结论 → 行动项（负责人 + 截止日期）→ 待确认事项。
+把文档分享给参会的同事。
+```
+
+### 注意事项
+
+- **必须先共享文件夹给 Bot**：飞书机器人没有"我的空间"根目录，如果不把目标文件夹分享给 Bot，创建/写入操作会失败
+- **Wiki 也需要授权**：如果要写入知识库，需要先把 Bot 加入对应的 Wiki Space
+- **权限管理谨慎使用**：feishu-perm 涉及权限变更，建议只给 Bot 分享特定文件夹，不给全盘权限
+
 ## 相关链接
 
 - [feishu-openclaw 完整配置指南与社区支持](https://github.com/AlexAnys/openclaw-feishu)
 - [OpenClaw 官方飞书文档](https://docs.openclaw.ai/zh-CN/channels/feishu)
 - [腾讯云 - 保姆级教程：OpenClaw 接入飞书](https://cloud.tencent.com/developer/article/2626160)
+- [腾讯云 - 5 分钟玩转飞书全家桶](https://cloud.tencent.com/developer/article/2631667)

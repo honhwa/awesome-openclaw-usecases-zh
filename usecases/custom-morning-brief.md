@@ -71,10 +71,51 @@ Think of what would be most helpful to put in this report.
 - 完整草稿（而不仅仅是想法）是节省时间的关键。醒来就看到脚本，而不是建议。
 - 无论你从事什么行业——包含任务、新闻和主动建议的早间简报都是普遍有用的。
 
+## 中国用户适配
+
+如果你使用飞书或钉钉，只需要把推送通道和新闻源替换一下，其他逻辑完全一样。
+
+### 推送通道替换
+
+把提示词中的 Telegram / Discord 替换为你实际使用的 IM：
+
+```text
+I want to set up a regular morning brief. Every morning at 8:00 AM,
+send me a report through Feishu.
+```
+
+前提是你已经配好了对应的 IM 通道（参考 [飞书 AI 助手](cn-feishu-ai-assistant.md) 或 [钉钉 AI 助手](cn-dingtalk-ai-assistant.md)）。
+
+### 中文新闻源推荐
+
+把英文新闻源换成中文源，让简报更贴合国内信息环境：
+
+```text
+我想设置一个每日早间简报。每天早上 8:00 通过飞书发给我。
+
+内容包括：
+1. 与我相关的隔夜新闻（关注 AI、创业、科技方向，优先看 36kr、少数派、知乎热榜）
+2. 今天需要完成的任务（从我的待办清单中拉取）
+3. 你建议今天可以帮我自动完成的事情
+
+对于内容创意部分，直接写完整草稿，不要只列标题。
+```
+
+### 定时任务（cron）设置
+
+OpenClaw 支持用自然语言创建定时任务：
+
+```text
+帮我创建一个定时任务：每个工作日早上 7:30，生成早间简报并发到飞书。
+时区设为 Asia/Shanghai。
+```
+
+也可以用命令行精确控制：
+
+```bash
+openclaw cron add --cron "30 7 * * 1-5" --tz "Asia/Shanghai" --message "生成今日早间简报并发送" --channel feishu
+```
+
 ## 参考来源
 
 灵感来自 [Alex Finn 关于改变生活的 OpenClaw 用例的视频](https://www.youtube.com/watch?v=41_TNGDDnfQ)。
-
----
-
-**原文链接**：[English Version](https://github.com/AlexAnys/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md)

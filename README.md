@@ -7,12 +7,12 @@
 
 <h3>OpenClaw AI 智能体最佳真实用例大全</h3>
 
-<p>34 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
+<p>37 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
 
 <br/>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![用例数量](https://img.shields.io/badge/用例-34-blue?style=flat-square)
+![用例数量](https://img.shields.io/badge/用例-37-blue?style=flat-square)
 ![中文](https://img.shields.io/badge/语言-简体中文-red?style=flat-square)
 ![新手友好](https://img.shields.io/badge/难度-新手友好-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
@@ -53,7 +53,7 @@
 - [生产力](#生产力) — 邮件整理、日程管理、客户服务、个人助理
 - [研究与学习](#研究与学习) — 知识库、市场调研、财报追踪
 - [金融与交易](#金融与交易) — 预测市场模拟交易
-- [中国特色用例](#-中国特色用例) — 飞书、小红书、全网比价等国内工具场景
+- [中国特色用例](#-中国特色用例) — 飞书、钉钉、企业微信、小红书、全网比价等国内工具场景
 
 ---
 
@@ -193,7 +193,10 @@
 
 | 名称 | 描述 | 难度 |
 |------|------|:---:|
-| [飞书 AI 助手](usecases/cn-feishu-ai-assistant.md) | 把 OpenClaw 部署为飞书机器人，在对话中直接触发 AI 任务 | ⭐⭐ |
+| [飞书 AI 助手](usecases/cn-feishu-ai-assistant.md) | 把 OpenClaw 部署为飞书机器人，在对话中直接触发 AI 任务，支持文档自动化 | ⭐⭐ |
+| [钉钉 AI 助手](usecases/cn-dingtalk-ai-assistant.md) | 把 OpenClaw 部署为钉钉机器人，Stream 模式无需公网 IP | ⭐⭐ |
+| [企业微信 AI 助手](usecases/cn-wecom-ai-assistant.md) | 在企业微信中使用 AI，通过微信插件让个人微信也能用 | ⭐⭐ |
+| [早间简报（中国适配）](usecases/custom-morning-brief.md) | 每日定时推送简报到飞书/钉钉，支持中文新闻源和 cron 配置 | ⭐ |
 | [办公自动化套件](usecases/cn-office-automation.md) | 邮件管理、文件整理、会议纪要、周报生成，支持 163/QQ/Outlook | ⭐⭐ |
 | [小红书内容自动化](usecases/cn-xiaohongshu-automation.md) | 从选题、文案、封面图到定时发布的全流程自动化 | ⭐ |
 | [全网比价助手](usecases/cn-ecommerce-price-assistant.md) | 跨淘宝/京东/拼多多/抖音/快手一句话比价 | ⭐ |
